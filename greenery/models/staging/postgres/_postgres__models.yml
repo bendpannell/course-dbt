@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: stg_addresses
+    description: Contains address information
+    columns:
+      - name: address_id
+        tests:
+          - not_null
+          - unique 
+      
+  - name: stg_events
+    description: Contains event information
+    columns:
+      - name: event_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_order_items
+    description: Contains order item information
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: product_id
+        tests:
+          - not_null
+      
+  - name: stg_orders
+    description: Contains order information
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_products
+    description: Contains product information
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_promos
+    description: Contains promo information
+    columns:
+      - name: promo_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_users
+    description: Contains user information
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
