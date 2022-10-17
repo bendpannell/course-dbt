@@ -1,6 +1,6 @@
 {{
   config(
-    materialized='table'
+    materialized='view'
   )
 }}
 
@@ -17,12 +17,12 @@ results as (
     created_at,
     order_cost,
     shipping_cost,
-    order_total,
+    order_total             as total_cost,
     tracking_id,
-    shipping_service,
+    shipping_service        as carrier,
     estimated_delivery_at,
     delivered_at,
-    status
+    status                  as order_status
 
   from source
 )

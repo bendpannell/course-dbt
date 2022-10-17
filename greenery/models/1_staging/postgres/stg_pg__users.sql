@@ -1,6 +1,6 @@
 {{
   config(
-    materialized='table'
+    materialized='view'
   )
 }}
 
@@ -13,6 +13,7 @@ results as (
     user_id,
     first_name,
     last_name,
+    first_name || ' ' || last_name as full_name,
     email,
     phone_number,
     created_at,
