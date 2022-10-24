@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_user_orders
+    description: >
+      User grained table with aggregated orders and timestamp analysis.
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique

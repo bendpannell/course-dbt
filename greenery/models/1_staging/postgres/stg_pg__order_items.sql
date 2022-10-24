@@ -9,12 +9,12 @@ with source as (
 ),
 
 results as (
-  SELECT 
-    order_id,
-    product_id,
-    quantity
+    select
+        order_id,
+        product_id,
+        quantity
 
-  from source
+    from source
 )
 
 select * from results

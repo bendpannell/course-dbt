@@ -41,12 +41,11 @@ models:
           - not_null
           - unique
 
-  - name: fct_events
+  - name: fct_sessions
     description: >
-      Since there is only 1 source for events information, the events fact will 
-      be nearly identical to the events staging table with additional calculations.
+      Session-grained table with aggregated event data.
     columns:
-      - name: event_id
+      - name: session_id
         tests:
           - not_null
           - unique

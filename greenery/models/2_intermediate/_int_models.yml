@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: int_order_details
+    description: >
+      Denormalied order-grained table with aggregations information for key
+      facts.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+  - name: int_sessions
+    description: >
+      Session-grained table with session information from the events table.
+    columns:
+      - name: unique_key
+        tests:
+          - not_null
+          
+
+  - name: int_user_addresses
+    description: >
+      Denormalized user-grained table.
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique

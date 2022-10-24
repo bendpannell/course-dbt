@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_user_sessions
+    description: >
+      "What are users doing during a session?"
+      User-grained table with aggregated session information
+    columns:
+      - name: unique_key
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_conversion
+    description: >
+      Session, Product, and Order-grained table with event information
+    columns:
+      - name: unique_key
+        tests:
+          - not_null
+
