@@ -93,7 +93,7 @@ results as (
 )
 
 select * from results;
-'''
+```
 
 Table:
 | View Conversion | Add Conversion | Checkout Conversion |
