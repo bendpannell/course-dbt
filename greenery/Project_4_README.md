@@ -99,7 +99,7 @@ Table:
 | View Conversion | Add Conversion | Checkout Conversion |
 | :-------------: | :------------: | :-----------------: |
 | 1 | 0.808 | 0.625 |
-| N/A | 0.192 | 0.183 |
+
 
 The largest drop-off is between Views and Adds. Focusing on areas to promote 'Add-to-carts' will strengthen this funnel.
 
